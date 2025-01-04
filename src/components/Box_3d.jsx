@@ -2,6 +2,9 @@ import Spline from '@splinetool/react-spline';
 
 export default function App() {
   return (
-    <Spline scene="https://prod.spline.design/bLJRjOhu4KrWh3Ih/scene.splinecode" />
+    <div className='rounded-lg overflow-hidden shadow-lg'>
+      <Spline scene="https://prod.spline.design/bLJRjOhu4KrWh3Ih/scene.splinecode" />
+    </div>
+    
   );
 }

@@ -1,12 +1,14 @@
 
 import './App.css'
 import Home from './components/Home'
+import Navbar from './components/Navbar'
 
 function App() {
   
 
   return (
-    <div>
+    <div className='bg-blue-600'>
+      <Navbar/>
       <Home/>
     </div>
   )
