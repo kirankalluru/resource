@@ -1,16 +1,22 @@
 
 import './App.css'
+import Branches from './components/Branches'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 
 function App() {
   
 
   return (
-    <div className='bg-blue-600'>
+    
+    <Router>
       <Navbar/>
-      <Home/>
-    </div>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/branches' element={<Branches/>}/>
+      </Routes>
+    </Router>
   )
 }
 

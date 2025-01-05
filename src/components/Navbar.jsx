@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,24 +58,16 @@ const Navbar = () => {
           } sm:block absolute sm:relative left-0 w-full sm:w-auto bg-indigo-500 sm:bg-transparent text-center sm:text-left`}
         >
           <li className="border-b sm:border-none border-gray-700 py-2 sm:py-0">
-            <a href="#" className="hover:text-blue-100 block sm:inline">
-              Home
-            </a>
+            <Link to="/" className="hover:text-blue-100 block sm:inline">Home</Link>
           </li>
           <li className="border-b sm:border-none border-gray-700 py-2 sm:py-0">
-            <a href="#" className="hover:text-blue-300 block sm:inline">
-              About
-            </a>
+          <Link to="/Branches" className="hover:text-blue-100 block sm:inline">Branches</Link>
           </li>
           <li className="border-b sm:border-none border-gray-700 py-2 sm:py-0">
-            <a href="#" className="hover:text-blue-300 block sm:inline">
-              Services
-            </a>
+          <Link to="/Servicves" className="hover:text-blue-100 block sm:inline">Services</Link>
           </li>
           <li className="py-2 sm:py-0">
-            <a href="#" className="hover:text-blue-300 block sm:inline">
-              Contact
-            </a>
+          <Link to="/" className="hover:text-blue-100 block sm:inline">Contact</Link>
           </li>
         </ul>
       </div>
